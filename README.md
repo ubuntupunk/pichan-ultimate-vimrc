@@ -1,8 +1,15 @@
-# The Ultimate Vimrc Ubuntupunk Raspberry Pi EDITION
+# The Ultimate Vimrc [Ubuntupunk Raspberry Pi EDITION]
+
+
+<a href="https://www.buymeacoffee.com/ubuntupunk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
+![alt banner](banner.png)
 
 This collection borrows from [Offchan42](https://github.com/offchan42/vimrc) and [Amix] versions which you can find on github.
 
-Offchan's version correctly uses git submodules! But you will need to update submodules with the`` --recursive`` flag to check them out properly. I recommend  using the ubuntupunk rpi edition submodule-manager for this, currently going through a major revision of the extensions, hotkeys. I am currently using it on my Raspberry Pi 3B+, hence the Raspberry Edition.
+Offchan's version correctly uses git submodules! But you will need to update submodules with the`` --recursive`` flag to check them out properly. 
+
+I recommend  using the ubuntupunk rpi edition ``submodule-manager`` for this.  Currently going through a major revision of the extensions, hotkeys, using it on my Raspberry Pi 3B+, hence the Raspberry Edition.
 
 ## Prerequisite
 Latest vim installed via your package manager, or you can build it from source.
