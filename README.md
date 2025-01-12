@@ -1,8 +1,8 @@
-# The Ultimate Vimrc Ubuntupunk Rpi EDITION
+# The Ultimate Vimrc Ubuntupunk Raspberry Pi EDITION
 
-This collection borrows from [Offchan](https://github.com/offchan42/vimrc) and [Amix] versions which you can find on github.
+This collection borrows from [Offchan42](https://github.com/offchan42/vimrc) and [Amix] versions which you can find on github.
 
-Offchan's version correctly uses git submodules! But you will need to update submodules with the --recursive flag to check them out properly. I recommend not using the ubuntupunk rpi edition at the moment unless you want to live dangerously  because it is currently going through a major revision of the extensions, hotkeys and so on and will not work for most people. I am using it on my Raspberry Pi 3B+, hence the Rpi Edition.
+Offchan's version correctly uses git submodules! But you will need to update submodules with the`` --recursive`` flag to check them out properly. I recommend  using the ubuntupunk rpi edition submodule-manager for this, currently going through a major revision of the extensions, hotkeys. I am currently using it on my Raspberry Pi 3B+, hence the Raspberry Edition.
 
 ## Prerequisite
 Latest vim installed via your package manager, or you can build it from source.
@@ -14,6 +14,12 @@ There are two options:
 * **Awesome**: This includes a ton of useful plugins, color schemes and configurations
 
 We would of course recommend using the awesome version.
+
+* **SubModule Manager**: Included in the ubuntupunk edition  is a submodule manager
+  that will allow you to easily add and remove plugins. This is a great feature
+  and is highly recommended.
+  ``submodule-manager.sh``
+  ``submodule-manager-fzf.sh``
 
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
