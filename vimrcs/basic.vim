@@ -50,8 +50,10 @@ set autoread
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = " "
-let g:mapleader = " "
+" I've changed mapleader from "" to "\<Space>" i.e spacebar, see this posting
+" https://stackoverflow.com/questions/446269/can-i-use-space-as-mapleader-in-vim
+let mapleader = "\<Space> "
+let g:mapleader = "\<Space> "
 
 " Fast saving
 nmap <leader>fs :w!<cr>

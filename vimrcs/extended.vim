@@ -33,7 +33,7 @@ if has("gui_running")
   "colorscheme peaksea
   colorscheme solarized
 else
-  colorscheme zenburn
+  colorscheme tokyonight
 endif
 
 

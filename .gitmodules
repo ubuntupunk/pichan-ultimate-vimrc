@@ -1,12 +1,6 @@
 [submodule "sources_non_forked/vim-indent-guides"]
 	path = sources_non_forked/vim-indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "sources_non_forked/vim-gitgutter"]
-	path = sources_non_forked/vim-gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
-[submodule "sources_non_forked/neocomplete.vim"]
-	path = sources_non_forked/neocomplete.vim
-	url = https://github.com/Shougo/neocomplete.vim.git
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "sources_non_forked/indentLine"]
 	path = sources_non_forked/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
@@ -163,3 +157,20 @@
 [submodule "sources_non_forked/visual-split.vim"]
 	path = sources_non_forked/visual-split.vim
 	url = https://github.com/wellle/visual-split.vim
+[submodule "source_non-forked/tokyonight-vim"]
+	path = source_non-forked/tokyonight-vim
+	url = https://github.com/ghifarit53/tokyonight-vim
+	branch = master
+[submodule "source_non-forked/vim-indent-guides"]
+	path = source_non-forked/vim-indent-guides
+	url = https://github.com/preservim/vim-indent-guides.git
+	branch = master
+[submodule "sources_non-forked/copilot.vim"]
+	path = sources_non-forked/copilot.vim
+	url = https://github.com/github/copilot.vim.git
+[submodule "sources_non_forked/copilot.vim"]
+	path = sources_non_forked/copilot.vim
+	url = https://github.com/github/copilot.vim.git
+[submodule "sources_non_forked/tokyonight-vim"]
+	path = sources_non_forked/tokyonight-vim
+	url = https://github.com/ghifarit53/tokyonight-vim

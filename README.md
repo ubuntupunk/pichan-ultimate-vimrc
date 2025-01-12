@@ -1,45 +1,11 @@
-# The Ultimate vimrc [[OFF'S EDITION]]
-**Update**: I'm now using Vim when I want fast access because Vim is all over the
-place. But I'm currently using [Spacemacs](http://spacemacs.org/) (an Emacs
-distribution focusing on bringing the best of Vim and Emacs together) and I've
-been happy with it so far.
+# The Ultimate Vimrc Ubuntupunk Rpi EDITION
 
-**Update 2**: There is something
-called [SpaceVim](https://github.com/SpaceVim/SpaceVim) that comes out lately
-and it said that it's similar to **Spacemacs**. I have not tried it yet but this
-proved that concept of **Spacemacs** is good enough to be followed.
+This collection borrows from [Offchan](https://github.com/offchan42/vimrc) and [Amix] versions which you can find on github.
 
-This also means that it might be better to use **SpaceVim** distribution instead
-of mine. Because I think I'm not going to update this repository for awhile. I'm
-going to the dark side with **Spacemacs** distribution on **Emacs**.
-
-
-You will see that many key bindings in this vimrc is stolen from Spacemacs. I
-want you to explore it yourself. I encourage you to try it, here's my dot
-spacemacs directory in case you are curious:
-https://github.com/offchan42/.spacemacs.d
-
-**Update 3**: I'm now using `Visual Studio Code` as my go to text editor now.
-As it's easy to use and it also has a stunning Vim extension.
-It's fast to open in my PC. It took less than 3 seconds to run. That's not
-a lot of time to tolerate! Its Vim extension doesn't interfere much
-with the VS Code keybindings itself. That's why I like it. (JetBrains IDE like PyCharm, IntelliJ, PhpStorm, etc
-have Vim plugins that interfere a lot with its keybindings, so I don't use Vim plugin in those IDEs)
-
-I code in `python` a lot so `Jupyter Lab` is another IDE that runs in the browser. I like a lot
-because it's easy to experiment with code using its visual style. And it  starts even quicker than any text editor.
-And yes, it has Vim extension (without any interference with its keybindings at all)!
-So I suggest using Jupyter Lab to run your Jupyter Notebook and python code.
-
-Also, if you are a Vim lover like me, you might like Vimium extension in Chrome.
-Try that and you will not need to use much mouse for browsing web anymore.
+Offchan's version correctly uses git submodules! But you will need to update submodules with the --recursive flag to check them out properly. I recommend not using the ubuntupunk rpi edition at the moment unless you want to live dangerously  because it is currently going through a major revision of the extensions, hotkeys and so on and will not work for most people. I am using it on my Raspberry Pi 3B+, hence the Rpi Edition.
 
 ## Prerequisite
-If you don't have Vim installed, I suggest you to install 64-bit
-version and here is the suggested link: https://bintray.com/micbou/generic/vim
-
-Please use Vim version >= 7.4 if possible. GVim and MacVim are the most ideal
-distribution that I recommend.
+Latest vim installed via your package manager, or you can build it from source.
 
 ## Vimrc Installation
 There are two options:
@@ -47,26 +13,26 @@ There are two options:
 * **Basic**: If you want something small just copy [basic.vim](vimrcs/basic.vim) into your ~/.vimrc and you will have a great basic setup
 * **Awesome**: This includes a ton of useful plugins, color schemes and configurations
 
-I would of course recommend using the awesome version.
+We would of course recommend using the awesome version.
 
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
 ```bash
 git clone https://github.com/offchan42/vimrc.git ~/.vim_runtime
+cd ~/.vim_runtime && git submodule update --init --recursive sources_non_forked/
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 cd ~/.vim_runtime && git submodule update --init && cd ~-
 ```
 
-5. I highly recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960)
+5. Offchan recommends using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960)
 (it's free and awesome font for writing and programming).
 The Ultimate vimrc is already setup to try to use it.
 You can download it freely from this repository:
 https://github.com/adobe-fonts/source-code-pro
 
-1. If you want to use neocomplete (Autocomplete) plugin, you'll
-need to have Lua installed, please refer to
-https://github.com/Shougo/neocomplete.vim#requirements for further instructions.
+1. copilot.vim replaces neocomplete (Autocomplete) plugin, you'll need to have a
+   copilot account, but github now offers a free tier
 
 2. If you want to use **taglist.vim** plugin (**F8**) then you also need to install **ctags** which
 can be found at http://ctags.sourceforge.net/ (For Windows, I have already
@@ -76,27 +42,21 @@ set, use **chocolatey** and run `cinst ctags`)
   _Optional_: You can use the latest version of **ctags** which is named
   [Universal ctags](https://github.com/universal-ctags/ctags) manually instead of the **Exuberant ctags** I mentioned above.
 
-3. deprecated: ~~If you want to use Python's Omni autocomplete feature with **CTRL-X CTRL-O**
-then install Python 2 and set **PYTHONHOME** to the directory where you have
-**python.exe** lying around. Refer to http://stackoverflow.com/a/40566169/2593810 for more
-information.
-Try entering `:py print 2**10` and if it outputs `1024` then you are good to
-go.~~ Please use **jedi-vim** instead.
 
-4. If you want to use flake8 python static file checkers (**F7**) please use
+3. If you want to use flake8 python static file checkers (**F7**) please use
    python **pip** or any python environment manager to install **flake8** like
    so: `pip install flake8`.
    _In my opinion, this plugin is unnecessary. It rarely finds problems if you
    code well. :)_
 
-6. To use **jedi-vim** plugin, you must have **jedi** installed. Jedi is an
+4. To use **jedi-vim** plugin, you must have **jedi** installed. Jedi is an
    awesome autocompletion/static analysis library for Python.
    Either run `git submodule update --init --recursive` inside
    *sources_non_forked/jedi-vim/* or `pip install jedi` will work.
    If you are using **Anaconda** package manager, **jedi** will already be installed
    for you.
 
-7. To use **Ag** ([The Silver Searcher](https://github.com/ggreer/the_silver_searcher)),
+5. To use **Ag** ([The Silver Searcher](https://github.com/ggreer/the_silver_searcher)),
    you need to install it. It's like **grep** but is faster.
 
    If you are on Windows, the easiest way to install is to use [chocolatey](https://chocolatey.org/).
@@ -120,16 +80,11 @@ git clone git://github.com/offchan42/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_basic_vimrc.sh
 ```
 
-
 ## How to install on Windows?
 
 Use [msysgit (Git Bash)](http://msysgit.github.com/) to checkout the repository
 and run the installation instructions above. No special instructions needed ;-)
 
-## How to install on Linux
-
-Install like on Windows but instead of using Git Bash, you can just simply use a
-real Bash!
 
 ## How to update to latest version?
 
@@ -141,37 +96,6 @@ git pull --rebase
 git submodule foreach git pull origin master
 cd ~-
 ```
-
-## Some screenshots
-
-**LATEST SCREENSHOT**: This is my current working gVim on Windows. It uses **dark
-solarized** colorscheme.
-![Screenshot 0](screenshots/2016-11-14_02-29-15.png?raw=true)
-
-**gVim vs Atom on my Windows**: Clearly atom is more aesthetically pleasing, it
-also has **vim-mode-plus** so you can do some vimming inside it. But it's just a
-package, it cannot beat the true power of Vim. I love both of
-them, but I think I favor Vim more. Its interface is not as beautiful as Atom
-yet but it will as long as [Neovim](https://neovim.io/) team keeps working.
-I spent so much time learning and customizing my Vim, I'm not gonna be the
-victim of an editor's beauty ~~again~~! :)
-![gVim vs Atom](screenshots/2016-11-29_12-27-18.png?raw=true)
-
-Colors when editing a Python file of a **peaksea** colorscheme
-![Screenshot 1](http://files1.wedoist.com/e952fdb343b1e617b90d256e474d0370/as/screenshot_1.png)
-
-Opening recently opened files [mru.vim](https://github.com/vim-scripts/mru.vim):
-![Screenshot 2](http://files1.wedoist.com/1967b0e48af40e513d1a464e08196990/as/screenshot_2.png)
-
-[NERD Tree](https://github.com/scrooloose/nerdtree) plugin in a terminal window:
-![Screenshot 3](http://files1.wedoist.com/b1509d7ed9e9f357e8d04797f9fad67b/as/screenshot3.png)
-
-Old Windows showoff time!
-![Screenshot 4](http://files1.wedoist.com/4e85163d97b81422240c822c82022f2f/as/screenshot_4.png)
-
-Distraction free mode using [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2)
-(Default key to trigger is `<leader>z`):
-![Screenshot 5](https://d2dq6e731uoz0t.cloudfront.net/a5182977c3d6c2a6cd3f9e97398ca8ca/as/zen_mode.jpg)
 
 
 ## Included Plugins
