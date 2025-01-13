@@ -1,4 +1,4 @@
-# The Ultimate Vimrc [Ubuntupunk Raspberry Pi EDITION]
+# The Ultimate Vimrc [Ubuntupunk EDITION]
 
 
 <a href="https://www.buymeacoffee.com/ubuntupunk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
@@ -7,12 +7,13 @@
 
 This collection borrows from [Offchan42](https://github.com/offchan42/vimrc) and [Amix] versions which you can find on github.
 
-Offchan's version correctly uses git submodules! But you will need to update submodules with the`` --recursive`` flag to check them out properly. 
+Offchan's version correctly uses git submodules! But you will need to update his submodules with the`` --recursive`` flag to check them out properly. 
 
-I recommend  using the ubuntupunk rpi edition ``submodule-manager`` for this.  Currently going through a major revision of the extensions, hotkeys, using it on my Raspberry Pi 3B+, hence the Raspberry Edition.
+I recommend using the ubuntupunk edition ``submodule-manager`` for this.  Currently going through a major revision of the extensions, hotkeys, and using it on my Raspberry Pi 3B+.
 
 ## Prerequisite
-Latest vim installed via your package manager, or you can build it from source.
+Latest vim installed via your package manager, or you can build it from source
+using [my compile full vim script](https://github.com/ubuntupunk/my-scripts/blob/master/compile_full_vim.sh).
 
 ## Vimrc Installation
 There are two options:
