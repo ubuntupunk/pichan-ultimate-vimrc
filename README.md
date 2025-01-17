@@ -3,7 +3,7 @@
 
 <a href="https://www.buymeacoffee.com/ubuntupunk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-![alt banner](banner.png)
+![alt banner](banner.jpg)
 
 This collection borrows from [Offchan42](https://github.com/offchan42/vimrc) and [Amix] versions which you can find on github.
 
