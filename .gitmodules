@@ -163,3 +163,9 @@
 [submodule "sources_non_forked/copilot.vim"]
 	path = sources_non_forked/copilot.vim
 	url = https://github.com/github/copilot.vim.git
+[submodule "sources_non_forked/tokyonight.vim"]
+	path = sources_non_forked/tokyonight.vim
+	url = https://github.com/ghifarit53/tokyonight-vim.git
+[submodule "sources_non_forked/dracula.vim"]
+	path = sources_non_forked/dracula.vim
+	url = https://github.com/dracula/vim.git

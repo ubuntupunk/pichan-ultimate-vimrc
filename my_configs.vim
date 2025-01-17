@@ -1,8 +1,14 @@
 
-" off99555's '.vimrc' configurations
+" Ubuntupunks's '.vimrc' configurations
 " Extended to the Ultimate .vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Make sure my Visidian Vault $PATH is set
+autocmd VimEnter * call visidian#load_vault_path()
+
+"Set Mouse on for all modes
+:set mouse=a
+
 " file settings
 set number
 " Maximize the Vim window under Windows OS
