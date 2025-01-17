@@ -169,3 +169,6 @@
 [submodule "sources_non_forked/dracula.vim"]
 	path = sources_non_forked/dracula.vim
 	url = https://github.com/dracula/vim.git
+[submodule "sources_non_forked/nord.vim"]
+	path = sources_non_forked/nord.vim
+	url = https://github.com/nordtheme/vim.git
